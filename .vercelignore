@@ -1,0 +1,6 @@
+backend/
+Dockerfile
+compose.yaml
+compose.debug.yaml
+.dockerignore
+backend/Dockerfile
