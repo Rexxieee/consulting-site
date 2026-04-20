@@ -104,7 +104,7 @@ export default function DigitalAgencyHome() {
             <motion.div variants={itemVariants} className="lg:col-span-4 p-8 rounded-[3rem] bg-[#0a0a20] border border-white/5 hover:border-blue-500/40 transition-all group relative overflow-hidden">
                 <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/5 transition-colors" />
                 <div className="relative z-10">
-                    < स्मार्टफोन className="w-10 h-10 text-slate-400 mb-6 group-hover:text-blue-500 transition-colors" />
+                    <SmartphoneIcon className="w-10 h-10 text-slate-400 mb-6 group-hover:text-blue-500 transition-colors" />
                     <h3 className="text-2xl font-bold text-white mb-2 uppercase tracking-tighter">Mobile OS</h3>
                     <p className="text-sm text-slate-500 font-bold">Immersive mobile experiences that convert.</p>
                 </div>
@@ -145,6 +145,6 @@ export default function DigitalAgencyHome() {
 }
 
 // Special Lucide replacement for mobile icon (Smartphone) to avoid character error
-function स्मार्टफोन(props: any) {
+function SmartphoneIcon(props: any) {
     return <Smartphone {...props} />;
 }
