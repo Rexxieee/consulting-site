@@ -36,7 +36,7 @@ export default function DigitalAgencyHome() {
         type: "spring",
         staggerChildren: 0.1,
         duration: 0.8
-      } 
+      } as const
     }
   };
 
