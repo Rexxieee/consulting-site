@@ -25,7 +25,7 @@ const Card = ({ index, title, description, icon: Icon, progress, range, targetSc
           scale,
           top: `calc(-5vh + ${index * 25}px)`,
         }}
-        className="relative w-full max-w-5xl h-[500px] rounded-[2.5rem] p-8 lg:p-16 flex flex-col lg:flex-row gap-12 border border-border bg-card shadow-2xl backdrop-blur-xl group overflow-hidden"
+        className="relative w-full max-w-5xl h-[500px] rounded-[2.5rem] p-8 lg:p-16 flex flex-col lg:flex-row gap-12 border border-border bg-card dark:bg-background shadow-2xl backdrop-blur-xl group overflow-hidden"
       >
         {/* Abstract Background Decoration */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-accent/5 -skew-x-12 translate-x-1/4 -z-10" />
