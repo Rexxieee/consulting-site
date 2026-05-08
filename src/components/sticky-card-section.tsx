@@ -77,25 +77,21 @@ export const StickyCardSection = ({ services }: { services: any[] }) => {
     offset: ["start start", "end end"],
   });
 
-  const headerOpacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
-
   return (
     <section ref={container} className="relative pb-24">
       {/* Dynamic Header */}
-      <div className="max-w-7xl mx-auto px-6 mb-16 text-center sticky top-24 pt-10 pointer-events-none">
+      <div className="max-w-7xl mx-auto px-6 mb-16 text-center pt-10 pointer-events-none">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
            className="z-50"
         >
-          <motion.div style={{ opacity: headerOpacity }}>
-            <div className="section-marker justify-center">01 — Software</div>
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tighter mb-6 uppercase leading-[1.1]">
-              Empowering <span className="text-accent underline decoration-accent/10 italic">Excellence</span>: <br />
-              Unveiling Our Trailblazing <br />
-              Software Solutions
-            </h2>
-          </motion.div>
+          <div className="section-marker justify-center">01 — Software</div>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tighter mb-6 uppercase leading-[1.1]">
+            Empowering <span className="text-accent underline decoration-accent/10 italic">Excellence</span>: <br />
+            Unveiling Our Trailblazing <br />
+            Software Solutions
+          </h2>
         </motion.div>
       </div>
 
